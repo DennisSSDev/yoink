@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+package dennisssdev.yoink.epicstorecommunicator;
+option go_package = "rpc/epicstorecommunicator";
+
+/* TEST for connection
+curl --request "POST" \
+     --location "http://localhost:8034/twirp/dennisssdev.yoink.epicstorecommunicator.EpicStoreCommunicator/IsAlive" \
+     --header "Content-Type:application/json" \
+     --data '{}' \
+     --verbose;
+*/
+
+service EpicStoreCommunicator {
+  rpc PingForFreeGames(EmptyReq) returns (FreeEpicStoreGamesResp);
+  rpc IsAlive(EmptyReq) returns (IsAliveResp);
+}
+
+message EmptyReq {
+
+}
+
+message EpicStoreGame {
+  string name = 1;
+  string imageUrl = 2;
+  string promoEndDate = 3;
+}
+
+message FreeEpicStoreGamesResp {
+  repeated EpicStoreGame games = 1;
+}
+
+message IsAliveResp {
+  string status = 1;
+}

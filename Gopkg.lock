@@ -13,6 +13,18 @@
   version = "v1.4.2"
 
 [[projects]]
+  branch = "master"
+  digest = "1:070fd6646e4774dadf633e813a587e152f9386fad277e60a7c6907096a687efe"
+  name = "github.com/shurcooL/graphql"
+  packages = [
+    ".",
+    "ident",
+    "internal/jsonutil",
+  ]
+  pruneopts = "UT"
+  revision = "d48a9a75455f6af30244670bc0c9d0e38e7392b5"
+
+[[projects]]
   digest = "1:b806be9be73623fc584362b4545f924e837466f54ffbd78fc802e17b78615681"
   name = "github.com/twitchtv/twirp"
   packages = [
@@ -23,6 +35,14 @@
   pruneopts = "UT"
   revision = "a77ef5d8972d6484f88243fc67b36d90f9471962"
   version = "v5.10.2"
+
+[[projects]]
+  branch = "master"
+  digest = "1:7ccb2dbb79f60b4e530c7dc3a0b3681b3869cf7ea91c645735e4dd4e6e3264fd"
+  name = "golang.org/x/net"
+  packages = ["context/ctxhttp"]
+  pruneopts = "UT"
+  revision = "627f9648deb96c27737b83199d44bb5c1010cbcf"
 
 [[projects]]
   digest = "1:547944f541bb3fd4d171e520c73b5bcf55d4d9726a0d02080309a3ceb4c32071"
@@ -69,6 +89,7 @@
   input-imports = [
     "github.com/golang/protobuf/jsonpb",
     "github.com/golang/protobuf/proto",
+    "github.com/shurcooL/graphql",
     "github.com/twitchtv/twirp",
     "github.com/twitchtv/twirp/ctxsetters",
     "google.golang.org/protobuf/reflect/protoreflect",

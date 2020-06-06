@@ -7,6 +7,10 @@
     {
       "Repository": "github.com/twitchtv/twirp/protoc-gen-twirp",
       "Commit": "2bffe5f9b8c3d2ffbbbe8a0ea7ecf7b3368fbbe9"
+    },
+    {
+      "Repository": "github.com/shurcooL/graphql",
+      "Commit": "d48a9a75455f6af30244670bc0c9d0e38e7392b5"
     }
   ],
   "RetoolVersion": "1.3.7"
