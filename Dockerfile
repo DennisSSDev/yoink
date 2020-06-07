@@ -6,8 +6,8 @@ WORKDIR /go/src/github.com/dennisssdev/yoink
 
 COPY . /go/src/github.com/dennisssdev/yoink
 
-RUN go install ./cmd/greeter
+RUN go install ./cmd/epicstorecommunicatorserver
 
-CMD /go/bin/greeter
+CMD /go/bin/epicstorecommunicatorserver
 
 EXPOSE 8034
